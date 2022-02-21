@@ -47,6 +47,7 @@ namespace Student_Management_Studio
                     command.ExecuteNonQuery();
                     connection.Close();
                     clear();
+                    display();
 
                 }
                 catch (Exception ex)
@@ -59,6 +60,7 @@ namespace Student_Management_Studio
         {
             courseBox.Text = "";
             idBox.Text = "";
+            gradeBox.Text = "";
         }
 
         public void display()
@@ -111,10 +113,11 @@ namespace Student_Management_Studio
             try
             {
                 connection.Open();
-                command = new SqlCommand("UPDATE Course SET course_name='" + courseBox.Text + "', course_grade='" + gradeBox.Text + "' WHERE student_id='" + currStudentID + "'", connection);
+                command = new SqlCommand("UPDATE Course SET course_name='" + courseBox.Text + "', course_grade='" + gradeBox.Text + "' WHERE student_id='" + currStudentID + "' AND course_name='" + courseBox.Text + "'", connection);
 
                 command.ExecuteNonQuery();
                 connection.Close();
+                clear();
                 display();
             }
             catch (Exception ex)
@@ -129,11 +132,12 @@ namespace Student_Management_Studio
             {
                 connection.Open();
 
-                command = new SqlCommand("DELETE FROM Course SET course_name='" + courseBox.Text + "', course_grade='" + gradeBox.Text + "' WHERE student_id='" + currStudentID + "'", connection);
+                command = new SqlCommand("DELETE FROM Course SET course_name='" + courseBox.Text + "', course_grade='" + gradeBox.Text + "' WHERE student_id='" + currStudentID + "' AND course_name='" + courseBox.Text + "'", connection);
                 command.ExecuteNonQuery();
 
 
                 connection.Close();
+                clear();
                 display();
             }
             catch (Exception ex)
