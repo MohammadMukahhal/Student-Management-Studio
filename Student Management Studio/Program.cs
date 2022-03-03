@@ -14,9 +14,10 @@ namespace Student_Management_Studio
         [STAThread]
         static void Main()
         {
+            string path = @"Data Source=MUKAHHAL\SQLEXPRESS; Initial Catalog=student_management_studio;Integrated Security=True";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Login(path));
         }
     }
 }

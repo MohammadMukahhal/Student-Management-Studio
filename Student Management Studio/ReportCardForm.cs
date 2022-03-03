@@ -15,12 +15,11 @@ namespace Student_Management_Studio
 {
     public partial class ReportCardForm : Form
     {
-        string path = @"Data Source=MUKAHHAL\SQLEXPRESS; Initial Catalog=student_management_studio;Integrated Security=True";
         SqlConnection connection;
         SqlCommand command;
         SqlDataAdapter adapter;
         DataTable dataTable;
-        public ReportCardForm()
+        public ReportCardForm(String path)
         {
             InitializeComponent();
             connection = new SqlConnection(path);

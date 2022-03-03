@@ -13,15 +13,15 @@ namespace Student_Management_Studio
 {
     public partial class Login : Form
     {
-        string path = @"Data Source=MUKAHHAL\SQLEXPRESS; Initial Catalog=student_management_studio;Integrated Security=True";
         SqlConnection connection;
+        String path;
 
-        public Login()
+        public Login(String path)
         {
+            this.path = path;
             InitializeComponent();
             connection = new SqlConnection(path);
             WindowState = FormWindowState.Maximized;
-
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Student_Management_Studio
                     int count = dataSet.Tables[0].Rows.Count;
                     if (count == 1)
                     {
-                        Main main = new Main();
+                        Main main = new Main(path);
                         this.Hide();
                         main.Show();
                     }

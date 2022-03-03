@@ -12,10 +12,12 @@ namespace Student_Management_Studio
 {
     public partial class Main : Form
     {
-        public Main()
+        String path;
+        public Main(String path)
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+            this.path = path;
         }
         public void loadForm(Object Form)
         {
@@ -33,14 +35,14 @@ namespace Student_Management_Studio
 
         private void registrationBtn_Click(object sender, EventArgs e)
         {
-            loadForm(new Registration());
+            loadForm(new Registration(path));
 
         }
 
 
         private void gradeBtn_Click(object sender, EventArgs e)
         {
-            loadForm(new Grades());
+            loadForm(new Grades(path));
         }
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -50,7 +52,7 @@ namespace Student_Management_Studio
 
         private void reportBtn_Click(object sender, EventArgs e)
         {
-           loadForm(new ReportCardForm());
+           loadForm(new ReportCardForm(path));
         }
 
     }
