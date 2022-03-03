@@ -132,7 +132,7 @@ namespace Student_Management_Studio
             {
                 connection.Open();
 
-                command = new SqlCommand("DELETE FROM Course SET course_name='" + courseBox.Text + "', course_grade='" + gradeBox.Text + "' WHERE student_id='" + currStudentID + "' AND course_name='" + courseBox.Text + "'", connection);
+                command = new SqlCommand("DELETE FROM Course " + "WHERE student_id='" + currStudentID + "' AND course_name='" + courseBox.Text + "'", connection);
                 command.ExecuteNonQuery();
 
 

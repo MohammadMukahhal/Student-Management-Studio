@@ -170,8 +170,9 @@ namespace Student_Management_Studio
 
                 //command = new SqlCommand("DELETE FROM Course WHERE id='" + currStudentID + " '", connection);
                 //command.ExecuteNonQuery();
-
-                command = new SqlCommand("DELETE FROM StudentTable WHERE id='" + currStudentID + " '", connection);
+                command = new SqlCommand("DELETE FROM Course WHERE student_id='" + currStudentID.ToString() + "'", connection);
+                command.ExecuteNonQuery();
+                command = new SqlCommand("DELETE FROM StudentTable WHERE id='" + currStudentID.ToString() + "'", connection);
                 command.ExecuteNonQuery();
 
                 connection.Close();
