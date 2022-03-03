@@ -50,7 +50,7 @@ namespace Student_Management_Studio
 
         private void reportBtn_Click(object sender, EventArgs e)
         {
-          //  loadForm(new InvoiceForm());
+           loadForm(new ReportCardForm());
         }
 
     }
