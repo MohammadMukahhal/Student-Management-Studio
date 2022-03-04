@@ -97,7 +97,7 @@ namespace Student_Management_Studio
                 }
                 else if (addressBtn.Checked)
                 {
-                    adapter = new SqlDataAdapter("select * from StudentTable where student_addrsss like '%" + searchBox.Text + "%' ", connection);
+                    adapter = new SqlDataAdapter("select * from StudentTable where student_address like '%" + searchBox.Text + "%' ", connection);
                 }
                 else
                 {

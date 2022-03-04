@@ -34,6 +34,7 @@ namespace Student_Management_Studio
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.infoGroup = new System.Windows.Forms.GroupBox();
+            this.gradeBox = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
@@ -44,9 +45,8 @@ namespace Student_Management_Studio
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.searchGroup = new System.Windows.Forms.GroupBox();
-            this.displayBtn = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.gradeBox = new System.Windows.Forms.TextBox();
+            this.displayBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -66,6 +66,7 @@ namespace Student_Management_Studio
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Student_Management_Studio.Properties.Resources.report_card_96px;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 191);
@@ -115,6 +116,13 @@ namespace Student_Management_Studio
             this.infoGroup.Size = new System.Drawing.Size(982, 390);
             this.infoGroup.TabIndex = 2;
             this.infoGroup.TabStop = false;
+            // 
+            // gradeBox
+            // 
+            this.gradeBox.Location = new System.Drawing.Point(219, 64);
+            this.gradeBox.Name = "gradeBox";
+            this.gradeBox.Size = new System.Drawing.Size(255, 22);
+            this.gradeBox.TabIndex = 17;
             // 
             // updateBtn
             // 
@@ -233,6 +241,13 @@ namespace Student_Management_Studio
             this.searchGroup.TabStop = false;
             this.searchGroup.Text = "Search By";
             // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(166, 45);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(255, 22);
+            this.searchBox.TabIndex = 17;
+            // 
             // displayBtn
             // 
             this.displayBtn.BackColor = System.Drawing.Color.LightCyan;
@@ -244,20 +259,6 @@ namespace Student_Management_Studio
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = false;
             this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
-            // 
-            // searchBox
-            // 
-            this.searchBox.Location = new System.Drawing.Point(166, 45);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(255, 22);
-            this.searchBox.TabIndex = 17;
-            // 
-            // gradeBox
-            // 
-            this.gradeBox.Location = new System.Drawing.Point(219, 64);
-            this.gradeBox.Name = "gradeBox";
-            this.gradeBox.Size = new System.Drawing.Size(255, 22);
-            this.gradeBox.TabIndex = 17;
             // 
             // Grades
             // 

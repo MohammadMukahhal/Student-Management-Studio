@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewRegistration = new System.Windows.Forms.DataGridView();
             this.infoGroup = new System.Windows.Forms.GroupBox();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.NextBtn = new System.Windows.Forms.Button();
             this.searchGroup = new System.Windows.Forms.GroupBox();
             this.searchBox = new System.Windows.Forms.TextBox();
@@ -40,8 +42,6 @@
             this.addressBtn = new System.Windows.Forms.RadioButton();
             this.dobBtn = new System.Windows.Forms.RadioButton();
             this.phoneNumberBtn = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.idBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRegistration)).BeginInit();
@@ -61,7 +61,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Student_Management_Studio.Properties.Resources.add_96px;
+            this.pictureBox1.Image = global::Student_Management_Studio.Properties.Resources.report_card_96px;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 191);
@@ -80,14 +80,14 @@
             this.dataGridViewRegistration.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dataGridViewRegistration.Location = new System.Drawing.Point(0, 390);
             this.dataGridViewRegistration.Name = "dataGridViewRegistration";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRegistration.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRegistration.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewRegistration.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewRegistration.RowTemplate.Height = 24;
             this.dataGridViewRegistration.Size = new System.Drawing.Size(982, 410);
@@ -104,6 +104,23 @@
             this.infoGroup.Size = new System.Drawing.Size(982, 390);
             this.infoGroup.TabIndex = 2;
             this.infoGroup.TabStop = false;
+            // 
+            // idBox
+            // 
+            this.idBox.Location = new System.Drawing.Point(215, 51);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(234, 22);
+            this.idBox.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 36);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Student ID:";
             // 
             // NextBtn
             // 
@@ -190,23 +207,6 @@
             this.phoneNumberBtn.TabIndex = 30;
             this.phoneNumberBtn.Text = "Phone Number";
             this.phoneNumberBtn.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 36);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Student ID:";
-            // 
-            // idBox
-            // 
-            this.idBox.Location = new System.Drawing.Point(215, 51);
-            this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(234, 22);
-            this.idBox.TabIndex = 16;
             // 
             // ReportCardForm
             // 
